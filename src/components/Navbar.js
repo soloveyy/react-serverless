@@ -8,17 +8,18 @@ import {
 import Project from '../pages/Project';
 import Contact from '../pages/Contact';
 import Home from '../pages/Home'
+import {StyledNavbar, StyledNavbarItems, StyledNavbarItem, StyledLink} from '../styled/StyledNavbar'
 
 export default function Navbar() {
     return (
         <Router>
-            <div>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/project">Project</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                </ul>
-
+            <StyledNavbar>
+                <StyledNavbarItems>
+                    <StyledNavbarItem><StyledLink to="/">Home</StyledLink></StyledNavbarItem>
+                    <StyledNavbarItem><StyledLink to="/project">Project</StyledLink></StyledNavbarItem>
+                    <StyledNavbarItem><StyledLink to="/contact">Contact</StyledLink></StyledNavbarItem>
+                </StyledNavbarItems>
+            </StyledNavbar>
                 <Switch>
                 <Route path="/project">
                     <Project />
@@ -30,7 +31,7 @@ export default function Navbar() {
                     <Home />
                 </Route>
                 </Switch>
-            </div>
+
         </Router>
     )
 }

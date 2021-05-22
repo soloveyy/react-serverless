@@ -6,10 +6,13 @@ import {
   Link
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import { StyledContainer } from "./styled/StyledContainer";
 
 function App() {
   return (
-    <Navbar/>
+    <StyledContainer>
+      <Navbar/>
+    </StyledContainer>  
   );
 }
 
