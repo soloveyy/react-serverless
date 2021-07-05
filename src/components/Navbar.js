@@ -7,6 +7,7 @@ import {
   } from "react-router-dom";
 import Project from '../pages/Project';
 import Contact from '../pages/Contact';
+import Game from '../pages/Game';
 import Home from '../pages/Home'
 import {StyledNavbar, StyledNavbarItems, StyledNavbarItem, StyledLink} from '../styled/StyledNavbar'
 
@@ -21,6 +22,9 @@ export default function Navbar() {
                 </StyledNavbarItems>
             </StyledNavbar>
                 <Switch>
+                <Route path="/game">
+                    <Game />
+                </Route>
                 <Route path="/project">
                     <Project />
                 </Route>
@@ -31,7 +35,6 @@ export default function Navbar() {
                     <Home />
                 </Route>
                 </Switch>
-
         </Router>
     )
 }
