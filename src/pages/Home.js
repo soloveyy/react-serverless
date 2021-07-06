@@ -6,7 +6,7 @@ import Game from './Game'
 export default function Home() {
     return (
         <div>
-            <h1>Hello from Home :)</h1>
+            <h1>Hello from Home !</h1>
             <StartGameButton to="/game">Start to playing!</StartGameButton>
         </div>
     )
